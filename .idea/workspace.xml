@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91b138a0-9083-4a33-9503-b7c4d2f8555d" name="Default Changelist" comment="thymeleafTest 적용&#10;TestController.java&#10; - model 객체를 parameter로 요청해서 속성을 넣고, thymeleafTest에 반환시켜주는 것&#10;&#10;application.properties&#10; -">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo2/test/vo/TestVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/thymeleaf/thymeleafTest.html" afterDir="false" />
+    <list default="true" id="91b138a0-9083-4a33-9503-b7c4d2f8555d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo2/test/mapper/TestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo2/test/service/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/test/testMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/test/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo2/test/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/test/controller/HelloController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/test/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo2/test/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/test/controller/TestRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/test/vo/TestVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo2/test/vo/TestVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/thymeleaf/thymeleafTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test2.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo2/test/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo2/test/controller/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo2/test/controller/HelloController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo2/test/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo2/test/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo2/test/controller/TestRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +82,9 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.demo2" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.demo2.test.controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pms94\Spring Boot\demo2\src\main" />
       <recent name="C:\Users\pms94\Spring Boot\demo2\src" />
@@ -112,7 +126,9 @@
       <workItem from="1601631730295" duration="3820000" />
       <workItem from="1601641222543" duration="1351000" />
       <workItem from="1601644436809" duration="2503000" />
-      <workItem from="1601648509965" duration="4827000" />
+      <workItem from="1601648509965" duration="5849000" />
+      <workItem from="1601773715459" duration="2367000" />
+      <workItem from="1601799976963" duration="9719000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Boot jsp 적용하기">
       <created>1601646763901</created>
@@ -128,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601650499538</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="thymeleafTest 적용&#10;TestController.java&#10; - model 객체를 parameter로 요청해서 속성을 넣고, thymeleafTest에 반환시켜주는 것&#10;&#10;application.properties&#10; - jsp와 thymeleaf를 같이 사용할 때를 위한 설정&#10; - 자동 갱신&#10;&#10;TestVo.java&#10; - 사용자 객체 생성&#10; - Vo(=Variable Object)&#10; - 생성자 선언을 통해 값 받아오기&#10;&#10;pom.xml&#10; - thymeleaf 모듈 추가">
+      <created>1601653622086</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601653622086</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,73 +160,74 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Spring Boot jsp 적용하기" />
     <MESSAGE value="Spring Boot jsp 적용하기_2&#10; * taglib 사용해서 적용하기&#10; * ModelAndView 객체 적용하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Boot jsp 적용하기_2&#10; * taglib 사용해서 적용하기&#10; * ModelAndView 객체 적용하기" />
+    <MESSAGE value="thymeleafTest 적용&#10;TestController.java&#10; - model 객체를 parameter로 요청해서 속성을 넣고, thymeleafTest에 반환시켜주는 것&#10;&#10;application.properties&#10; - jsp와 thymeleaf를 같이 사용할 때를 위한 설정&#10; - 자동 갱신&#10;&#10;TestVo.java&#10; - 사용자 객체 생성&#10; - Vo(=Variable Object)&#10; - 생성자 선언을 통해 값 받아오기&#10;&#10;pom.xml&#10; - thymeleaf 모듈 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="thymeleafTest 적용&#10;TestController.java&#10; - model 객체를 parameter로 요청해서 속성을 넣고, thymeleafTest에 반환시켜주는 것&#10;&#10;application.properties&#10; - jsp와 thymeleaf를 같이 사용할 때를 위한 설정&#10; - 자동 갱신&#10;&#10;TestVo.java&#10; - 사용자 객체 생성&#10; - Vo(=Variable Object)&#10; - 생성자 선언을 통해 값 받아오기&#10;&#10;pom.xml&#10; - thymeleaf 모듈 추가" />
   </component>
   <component name="WindowStateProjectService">
     <state x="507" y="199" key="#Project_Structure" timestamp="1601646777458">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
     <state x="507" y="199" key="#Project_Structure/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601646777458" />
-    <state x="690" y="343" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601547970655">
+    <state x="690" y="343" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601807722247">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
-    <state x="690" y="343" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601547970655" />
+    <state x="690" y="343" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601807722247" />
     <state x="720" y="256" key="#com.intellij.ide.util.MemberChooser" timestamp="1601652937085">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
     <state x="720" y="256" key="#com.intellij.ide.util.MemberChooser/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601652937085" />
-    <state x="584" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1601548050418">
+    <state x="584" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1601814160886">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
-    <state x="584" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601548050418" />
+    <state x="584" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601814160886" />
     <state x="707" y="399" width="417" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601637830630">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
     <state x="707" y="399" width="417" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601637830630" />
-    <state x="861" y="126" key="CommitChangelistDialog2" timestamp="1601653343739">
+    <state x="861" y="126" key="CommitChangelistDialog2" timestamp="1601653620910">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
-    <state x="861" y="126" key="CommitChangelistDialog2/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601653343739" />
-    <state x="70" y="92" key="DiffContextDialog" timestamp="1601653326591">
+    <state x="861" y="126" key="CommitChangelistDialog2/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601653620910" />
+    <state x="70" y="92" key="DiffContextDialog" timestamp="1601653612647">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
-    <state x="70" y="92" key="DiffContextDialog/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601653326591" />
+    <state x="70" y="92" key="DiffContextDialog/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601653612647" />
     <state x="695" y="295" key="FileChooserDialogImpl" timestamp="1601646941000">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
     <state x="695" y="295" key="FileChooserDialogImpl/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601646941000" />
-    <state width="1788" height="295" key="GridCell.Tab.0.bottom" timestamp="1601653022925">
+    <state width="1788" height="295" key="GridCell.Tab.0.bottom" timestamp="1601820446042">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
-    <state width="1788" height="295" key="GridCell.Tab.0.bottom/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601653022925" />
-    <state width="1788" height="295" key="GridCell.Tab.0.center" timestamp="1601653022925">
+    <state width="1788" height="295" key="GridCell.Tab.0.bottom/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601820446042" />
+    <state width="1788" height="295" key="GridCell.Tab.0.center" timestamp="1601820446042">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
-    <state width="1788" height="295" key="GridCell.Tab.0.center/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601653022925" />
-    <state width="1788" height="295" key="GridCell.Tab.0.left" timestamp="1601653022925">
+    <state width="1788" height="295" key="GridCell.Tab.0.center/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601820446042" />
+    <state width="1788" height="295" key="GridCell.Tab.0.left" timestamp="1601820446041">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
-    <state width="1788" height="295" key="GridCell.Tab.0.left/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601653022925" />
-    <state width="1788" height="295" key="GridCell.Tab.0.right" timestamp="1601653022925">
+    <state width="1788" height="295" key="GridCell.Tab.0.left/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601820446041" />
+    <state width="1788" height="295" key="GridCell.Tab.0.right" timestamp="1601820446042">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
-    <state width="1788" height="295" key="GridCell.Tab.0.right/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601653022925" />
-    <state width="1788" height="295" key="GridCell.Tab.1.bottom" timestamp="1601653022926">
+    <state width="1788" height="295" key="GridCell.Tab.0.right/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601820446042" />
+    <state width="1788" height="295" key="GridCell.Tab.1.bottom" timestamp="1601820446042">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
-    <state width="1788" height="295" key="GridCell.Tab.1.bottom/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601653022926" />
-    <state width="1788" height="295" key="GridCell.Tab.1.center" timestamp="1601653022925">
+    <state width="1788" height="295" key="GridCell.Tab.1.bottom/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601820446042" />
+    <state width="1788" height="295" key="GridCell.Tab.1.center" timestamp="1601820446042">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
-    <state width="1788" height="295" key="GridCell.Tab.1.center/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601653022925" />
-    <state width="1788" height="295" key="GridCell.Tab.1.left" timestamp="1601653022925">
+    <state width="1788" height="295" key="GridCell.Tab.1.center/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601820446042" />
+    <state width="1788" height="295" key="GridCell.Tab.1.left" timestamp="1601820446042">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
-    <state width="1788" height="295" key="GridCell.Tab.1.left/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601653022925" />
-    <state width="1788" height="295" key="GridCell.Tab.1.right" timestamp="1601653022926">
+    <state width="1788" height="295" key="GridCell.Tab.1.left/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601820446042" />
+    <state width="1788" height="295" key="GridCell.Tab.1.right" timestamp="1601820446042">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
-    <state width="1788" height="295" key="GridCell.Tab.1.right/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601653022926" />
+    <state width="1788" height="295" key="GridCell.Tab.1.right/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601820446042" />
     <state x="509" y="202" key="Registry" timestamp="1601541805616">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
@@ -212,14 +236,15 @@
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
     <state x="416" y="182" key="SettingsEditor/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601646602643" />
-    <state x="507" y="273" key="Vcs.Push.Dialog.v2" timestamp="1601650507599">
+    <state x="507" y="273" key="Vcs.Push.Dialog.v2" timestamp="1601653626663">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
-    <state x="507" y="273" key="Vcs.Push.Dialog.v2/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601650507599" />
-    <state x="608" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1601631746479">
+    <state x="507" y="273" key="Vcs.Push.Dialog.v2/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601653626663" />
+    <state x="608" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1601803329093">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>
-    <state x="608" y="364" key="com.intellij.ide.util.TipDialog/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601631746479" />
+    <state x="608" y="364" key="com.intellij.ide.util.TipDialog/0.0.1831.1080/-1080.0.1080.1880@0.0.1831.1080" timestamp="1601803329093" />
+    <state x="608" y="364" key="com.intellij.ide.util.TipDialog/0.0.1831.1080@0.0.1831.1080" timestamp="1601773724134" />
     <state x="294" y="242" key="new project wizard" timestamp="1601642571452">
       <screen x="0" y="0" width="1831" height="1080" />
     </state>

@@ -1,32 +1,36 @@
 package com.example.demo2.test.controller;
 
+import com.example.demo2.test.service.TestService;
 import com.example.demo2.test.vo.TestVo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
-@Controller
+import java.util.List;
+
+@RestController
 public class TestController {
 
-    @RequestMapping(value = "/home")
-    public String home() {
-        return "home.html";
+    @Autowired
+    TestService testService;
+
+    @RequestMapping(value = "/")
+    public String home() throws Exception{
+        return "Hello World";
     }
 
-    @ResponseBody
-    @RequestMapping("/valueTest")
-    public String valueTest() {
-        String value = "테스트 String";
-        return value;
+    @RequestMapping(value = "/test")
+    public ModelAndView test() throws Exception {
+
+        List<TestVo> testList = testService.selectTest();
+
+        ModelAndView mav = new ModelAndView();
+        mav.addObject("list", testList);
+        return mav;
     }
 
-    @RequestMapping("/thymeleafTest")
-    public String thymeleafTest(Model model) {
-        TestVo testModel = new TestVo("ID(mistive)", "NAME(MISTIVE)");
-        model.addAttribute("testModel", testModel);
-        return "thymeleaf/thymeleafTest";
-    }
+
 }
-
-
